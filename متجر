@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>متجرنا الإلكتروني</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>متجرنا الإلكتروني</h1>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="products.html">المنتجات</a>
+      <a href="cart.html">عربة التسوق</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>مرحباً بكم في متجرنا</h2>
+      <p>قم بإضافة منتجاتك والتمتع بتجربة تسوق فريدة.</p>
+    </section>
+    <section class="features">
+      <h3>مميزاتنا</h3>
+      <ul>
+        <li>إضافة المنتجات بسهولة</li>
+        <li>تكامل مع Apple Pay</li>
+        <li>تصميم متجاوب لجميع الأجهزة</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 متجرنا الإلكتروني. جميع الحقوق محفوظة.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>المنتجات - متجرنا الإلكتروني</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>المنتجات</h1>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="products.html">المنتجات</a>
+      <a href="cart.html">عربة التسوق</a>
+    </nav>
+  </header>
+  <main>
+    <section class="products">
+      <h2>قائمة المنتجات</h2>
+      <p>يمكنك إضافة منتجاتك هنا لاحقاً.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 متجرنا الإلكتروني. جميع الحقوق محفوظة.</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>عربة التسوق - متجرنا الإلكتروني</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>عربة التسوق</h1>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="products.html">المنتجات</a>
+      <a href="cart.html">عربة التسوق</a>
+    </nav>
+  </header>
+  <main>
+    <section class="cart">
+      <h2>العناصر في العربة</h2>
+      <p>العربة فارغة حالياً.</p>
+      <a href="payment.html" class="payment-link">الدفع</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 متجرنا الإلكتروني. جميع الحقوق محفوظة.</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الدفع - متجرنا الإلكتروني</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>الدفع</h1>
+  </header>
+  <main>
+    <section class="payment-section">
+      <h2>إتمام عملية الدفع باستخدام Apple Pay</h2>
+      <button id="applePayButton">Apple Pay</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 متجرنا الإلكتروني. جميع الحقوق محفوظة.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.hero {
+  background: #555;
+  padding: 4rem;
+  text-align: center;
+  color: #fff;
+}
+
+.features, .products, .cart, .payment-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff;
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.payment-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007aff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+document.addEventListener("DOMContentLoaded", function(){
+  const applePayButton = document.getElementById("applePayButton");
+  if (applePayButton) {
+    applePayButton.addEventListener("click", function(){
+      // هنا يتم محاكاة عملية الدفع بواسطة Apple Pay
+      alert("تم تفعيل Apple Pay. عملية الدفع تمت بنجاح (محاكاة)!");
+    });
+  }
+});
